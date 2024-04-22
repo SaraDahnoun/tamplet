@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Expense Report</title>
+  <!-- Ajout de Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Create Expense Report</h1>
+    <form action="/create-expense-report" method="post">
+      <div class="form-group">
+        <label for="expense-category">Expense Category:</label>
+        <select name="expense-category" id="expense-category" class="form-control">
+          <option value="">Select Expense Category...</option>
+          <option value="Travel">Utilities</option>
+          <option value="Meals">Printing</option>
+          <option value="Office Supplies">Grocery</option>
+          <option value="Other">Travel</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="user">User:</label>
+        <select name="user" id="user" class="form-control">
+          <option value="">Select User...</option>
+            <option value="Admin">Admin</option>
+            <option value="Salesman">Salesman</option>
+            <option value="Mr. Gus Schroeder">Mr. Gus Schroeder</option>
+            <option value="Minerva Kilback">Minerva Kilback</option>
+            <option value="Prof. Hardy Kreig">Prof. Hardy Kreig</option>
+            <option value="Stock manager Mallory Willms II">Stock manager Mallory Willms II</option>
+            <option value="Leon Runolfsson">Leon Runolfsson</option>
+            <option value="Tessie Cruickshanks">Tessie Cruickshanks</option>
+            <option value="Jazmyn Farrell">Jazmyn Farrell</option>
+            <option value="Prof. Jewel Herzog">Prof. Jewel Herzog</option>
+            <option value="Lavon Baum">Lavon Baum</option>
+            <option value="Mrs. Polly Effertz">Mrs. Polly Effertz</option>
+            <option value="Prof. Ramona Sipes">Prof. Ramona Sipes</option>
+            <option value="Devon Hoeger">Devon Hoeger</option>
+            <option value="Glennie Bernhard">Glennie Bernhard</option>
+            <option value="Tomas Pfannerstill">Tomas Pfannerstill</option>
+            <option value="Zora Ledner">Zora Ledner</option>
+            <option value="Alfredo Ledner">Alfredo Ledner</option>
+            <option value="Mr. Luciano Von">Mr. Luciano Von</option>
+            <option value="Providenci Schmitt">Providenci Schmitt</option>
+            <option value="Arden Rippin">Arden Rippin</option>
+            <option value="Joy Kshlerin">Joy Kshlerin</option>
+            <option value="Gaylord Swift Sr.">Gaylord Swift Sr.</option>
+            <option value="Estevan Hills III">Estevan Hills III</option>
+            <option value="Mr. Deondre Obe">Mr. Deondre Obe</option>
+            <option value="Janie Beier V">Janie Beier V</option>
+            <option value="Mr. Presley Olsor">Mr. Presley Olsor</option>
+            <option value="Ms. Lavina Kreige">Ms. Lavina Kreige</option>
+            <option value="Zachary Miller Ph.">Zachary Miller Ph.</option>
+            <option value="Carmel Carroll">Carmel Carroll</option>
+            <option value="Minerva Althire">Minerva Althire</option>
+            <option value="Prof. Cleveland">Prof. Cleveland</option>
+          </select>
+          
+          
+         
+          
+         
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" value="<?php echo date('Y-m-d'); ?>" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" id="amount" required class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="expense-bill">Expense Bill:</label>
+        <input type="file" name="expense-bill" id="expense-bill" class="form-control-file">
+      </div>
+      <div class="form-group">
+        <label for="notes">Notes:</label>
+        <textarea name="notes" id="notes" rows="5" class="form-control"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Create</button>
+      <button type="reset" class="btn btn-secondary">Cancel</button>
+    </form>
+  </div>
+
+  <!-- Ajout de Bootstrap JS (optionnel) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create New Payment</title>
+  <!-- Ajout de Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Add New Payment</h1>
+    <form action="/create-payment" method="post">
+      <div class="form-group">
+        <label for="user">User:</label>
+        <select name="user" id="user" class="form-control">
+          <option value="">Select User...</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" id="amount" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="payment-date">Payment Date:</label>
+        <input type="date" name="payment-date" id="payment-date" class="form-control" value="<?php echo date('Y-m-d'); ?>">
+      </div>
+      <div class="form-group">
+        <label for="payment-mode">Payment Mode:</label>
+        <select name="payment-mode" id="payment-mode" class="form-control">
+          <option value="">Select Payment Mode...</option>
+          <option value="">Cash<option>
+          <option value="">Stripe</option>
+          <option value="">Paypal</option>
+          <option value="">999999</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="notes">Notes:</label>
+        <textarea name="notes" id="notes" rows="5" class="form-control"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Create</button>
+      <button type="reset" class="btn btn-secondary">Cancel</button>
+    </form>
+  </div>
+  
+  <!-- Ajout de Bootstrap JS (optionnel) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

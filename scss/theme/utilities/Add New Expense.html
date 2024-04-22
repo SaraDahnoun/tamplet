@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Expense</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container py-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-8">
+        <h2 class="mb-4">Add New Expense</h2>
+        <div class="card rounded-0 shadow-sm border-primary">
+          <div class="card-header bg-primary text-light">
+            <h4 class="mb-0">Expense Details</h4>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="expenseCategory">Expense Category</label>
+                    <select class="form-control" id="expenseCategory" aria-label="Default select example">
+                      <option selected>Select Expense Category...</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="user">User</label>
+                    <select class="form-control" id="user" aria-label="Default select example">
+                      <option selected>Select User...</option>
+                      <option value="Admin">Admin</option>
+                      <option value="Salesmam">Salesmam</option>
+                      <option value="Mr. Gus Schroede">Mr. Gus Schroede</option>
+                      <option value="Minerva Kilback">Minerva Kilback</option>
+                      <option value="Prof. Hardy Kreig">Prof. Hardy Kreig</option>
+                      <option value="Stock manager">Stock manager</option>
+                      <option value="Mallory Willms II">Mallory Willms II</option>
+                      <option value="Leon Runolfsson">Leon Runolfsson</option>
+                      <option value="Tessie Cruickshar">Tessie Cruickshar</option>
+                      <option value="Jazmyn Farrell">Jazmyn Farrell</option>
+                      <option value="Prof. Jewel Herzo">Prof. Jewel Herzo</option>
+                      <option value="Lavon Baum">Lavon Baum</option>
+                      <option value="Hach, Mrs. Polly Effertz">Hach, Mrs. Polly Effertz</option>
+                      <option value="Prof. Ramona Sip">Prof. Ramona Sip</option>
+                      <option value="Devon Hoeger">Devon Hoeger</option>
+                      <option value="Glennie Bernhard">Glennie Bernhard</option>
+                      <option value="Tomas Pfannersti">Tomas Pfannersti</option>
+                      <option value="Zora Lednerm">Zora Lednerm</option>
+                      <option value="Alfredo Ledner">Alfredo Ledner</option>
+                      <option value="Mr. Luciano Von">Mr. Luciano Von</option>
+                      <option value="Providenci Schmi">Providenci Schmi</option>
+                      <option value="Arden Rippin">Arden Rippin</option>
+                      <option value="Joy Kshlerin">Joy Kshlerin</option>
+                      <option value="Gaylord Swift Sr.">Gaylord Swift Sr.</option>
+                      <option value="Estevan Hills III">Estevan Hills III</option>
+                      <option value="Mr. Deondre Obe">Mr. Deondre Obe</option>
+                      <option value="Janie Beier V">Janie Beier V</option>
+                      <option value="Mr. Presley Olsor">Mr. Presley Olsor</option>
+                      <option value="Ms. Lavina Kreige">Ms. Lavina Kreige</option>
+                      <option value="Zachary Miller Ph">Zachary Miller Ph</option>
+                      <option value="Carmel Carroll">Carmel Carroll</option>
+                      <option value="Minerva Althire">Minerva Althire</option>
+                      <option value="Prof. Cleveland">Prof. Cleveland</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" class="form-control" id="date" name="date">
+                  </div>
+                  <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" class="form-control" id="amount" name="amount" placeholder="0.00">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="expenseBill">Expense Bill</label>
+                    <input type="file" class="form-control" id="expenseBill" name="expenseBill">
+                  </div>
+                  <div class="form-group">
+                    <label for="notes">Notes</label>
+                    <textarea class="form-control" id="notes" name="notes" rows="3" placeholder="Please Enter Notes"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end mt-4">
+                <button type="button" class="btn btn-secondary me-2">Cancel</button>
+                <button type="submit" class="btn btn-primary">Create</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

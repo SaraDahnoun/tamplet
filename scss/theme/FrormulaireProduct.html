@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add a New Product</title>
+  <!-- Ajout de Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Add a New Product</h1>
+    <form action="#">
+      <div class="mb-3">
+        <label for="productType" class="form-label">Product Type</label>
+        <select id="productType" name="productType" class="form-select">
+          <option value="single">Single Product</option>
+          <option value="variation">Product with Variations</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="image" class="form-label">Image</label>
+        <input type="file" id="image" name="image" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter the product name" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="slug" class="form-label">Slug</label>
+        <input type="text" id="slug" name="slug" placeholder="Enter the product slug" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label for="brand" class="form-label">Brand</label>
+        <select id="brand" name="brand" class="form-select">
+          <option value="">Select a brand</option>
+          <option value="Sony">Sony</option>
+          <option value="Apple">Apple</option>
+          <option value="Zebronics">Zebronics</option>
+          <option value="Lenova">Lenova</option>
+          <option value="Asus">Asus</option>
+          <option value="Dell">Dell</option>
+          <option value="Samsung">Samsung</option>
+          <option value="Oppo">Oppo</option>
+          <option value="Acer">Acer</option>
+          <option value="Gildan">Gildan</option>
+          <option value="Lee">Lee</option>
+          <option value="Champion">Champion</option>
+          <option value="Adidas">Adidas</option>
+          <option value="Puma">Puma</option>
+          <option value="Reebok">Reebok</option>
+          <option value="Welch's">Welch's</option>
+          <option value="Peet's">Peet's</option>
+          <option value="Tostitos">Tostitos</option>
+          <option value="Grandma's">Grandma's</option>
+          <option value="Pampers">Pampers</option>
+          <option value="Infantino">Infantino</option>
+          <option value="Graco">Graco</option>
+          <option value="Munchkin">Munchkin</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="category" class="form-label">Category</label>
+        <select id="category" name="category" class="form-select">
+          <option value="">Select Category...</option>
+          <option value="electronics">Electronics</option>
+          <optgroup label="Electronics">
+              <option value="audio">Audio</option>
+              <optgroup label="Audio">
+                  <option value="headphones">Headphones</option>
+                  <option value="soundbars">Soundbars</option>
+              </optgroup>
+              <option value="mobiles">Mobiles</option>
+              <option value="televisions">Televisions</option>
+              <option value="computers">Computers</option>
+              <optgroup label="Computers">
+                  <option value="laptops">Laptops</option>
+                  <option value="desktops">Desktops</option>
+              </optgroup>
+              <option value="computer-peripherals">Computer Peripherals</option>
+              <optgroup label="Computer Peripherals">
+                  <option value="monitors">Monitors</option>
+                  <option value="printers">Printers</option>
+              </optgroup>
+          </optgroup>
+          <option value="fashion">Fashion</option>
+          <option value="grocery">Grocery</option>
+          <option value="home-and-furniture">Home & Furniture</option>
+          <option value="baby-and-kids">Baby & Kids</option>
+          <option value="main-category1">Main Category1</option>
+          <optgroup label="Main Category1">
+              <option value="category1">Category 1</option>
+          </optgroup>
+      </select>
+      </div>
+      <div class="mb-3">
+        <label for="unit" class="form-label">Unit</label>
+        <select id="unit" name="unit" class="form-select">
+          <option value="">Select a unit</option>
+          <option value="pc">Piece (pc)</option>
+          <option value="m">Meter (m)</option>
+          <option value="kg">Kilogram (kg)</option>
+          <option value="l">Liter (l)</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="quantityAlert" class="form-label">Quantity Alert</label>
+        <input type="number" id="quantityAlert" name="quantityAlert" placeholder="Enter the quantity alert" class="form-control">
+      </div>
+
+      <div class="mb-3">
+        <label for="barcodeSymbology" class="form-label">Barcode Symbology</label>
+        <select id="barcodeSymbology" name="barcodeSymbology" class="form-select">
+          <option value="CODE128">CODE128</option>
+          <option value="CODE39">CODE39</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="itemCode" class="form-label">Item Code</label>
+        <input type="text" id="itemCode" name="itemCode" placeholder="Enter the item code" class="form-control">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Add Product</button>
+    </form>
+  </div>
+ 
+      <!-- Autres champs du formulaire ici -->
+
+      <!-- Ligne noire pour séparer -->
+     
+
+      <!-- Section Price & Tax -->
+      <hr class="my-4 border-dark">
+      <h2>Price & Tax</h2>
+      <div class="row mb-3">
+        <div class="col">
+          <label for="tax" class="form-label">Tax</label>
+          <input type="text" id="tax" name="tax" placeholder="Enter the tax" class="form-control">
+        </div>
+        <div class="col">
+          <label for="openingStock" class="form-label">Opening Stock</label>
+          <input type="text" id="openingStock" name="openingStock" placeholder="Enter the opening stock" class="form-control">
+        </div>
+        <div class="col">
+          <label for="openingStockDate" class="form-label">Opening Stock Date</label>
+          <input type="date" id="openingStockDate" name="openingStockDate" class="form-control">
+        </div>
+      </div>
+    
+
+      <!-- Section Purchase Price -->
+     
+      <div class="row mb-3">
+        <div class="col">
+          <label for="purchasePrice" class="form-label">Purchase Price</label>
+          <input type="number" id="purchasePrice" name="purchasePrice" class="form-control" value="0" step="1">
+        </div>
+        <div class="col">
+          <label for="taxOption" class="form-label">Tax Option</label>
+          <select id="taxOption" name="taxOption" class="form-select">
+            <option value="withTax">With Tax</option>
+            <option value="withoutTax">Without Tax</option>
+          </select>
+        </div>
+      </div>
+      <div>
+      <hr class="my-4 border-dark">
+      <h2>Custom Fields</h2>
+      <div class="mb-3">
+        <label for="expiryDate" class="form-label">Expiry Date</label>
+        <input type="date" id="expiryDate" name="expiryDate" class="form-control">
+      </div>
+      
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea id="description" name="description" class="form-control" rows="4" placeholder="Enter product description"></textarea>
+      </div>
+      <div class="row">
+        <div class="col text-end">
+          <button type="button" class="btn btn-primary">Create</button>
+          <button type="submit" class="btn btn-primary">Save & Continue</button>
+          <button type="button" class="btn btn-outline-light">Cancel</button>
+        </div>
+      </div>
+  
+
+
+     
+    </form>
+  </div>
+
+  <!-- Ajout de Bootstrap JS (optionnel) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+

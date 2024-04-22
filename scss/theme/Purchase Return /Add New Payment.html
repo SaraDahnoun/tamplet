@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Payment</title>
+  <!-- Ajout de Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">Add New Payment</h1>
+    <form action="#">
+      <!-- Champ Select User -->
+      <div class="form-group">
+        <label for="user">Select User</label>
+        <select id="user" name="user" class="form-control">
+          <option value="">Select User</option>
+          <option value="Laron Bosco">Laron Bosco</option>
+          <option value="Kitty Fritsch">Kitty Fritsch</option>
+          <option value="Waylon Roob">Waylon Roob</option>
+          <option value="Kamren Schuster">Kamren Schuster</option>
+          <option value="Mr. Quentin Fadel">Mr. Quentin Fadel</option>
+          <option value="Dr. Lowell Thompson">Dr. Lowell Thompson</option>
+          <option value="Estell Spencer">Estell Spencer</option>
+          <option value="Tracey Thiel">Tracey Thiel</option>
+          <option value="Estefania Vandervort">Estefania Vandervort</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <!-- Champ Amount -->
+      <div class="form-group">
+        <label for="amount">Amount</label>
+        <input type="text" id="amount" name="amount" class="form-control" placeholder="Please enter Amount">
+      </div>
+
+      <!-- Champ Payment Date et Payment Mode Type -->
+      <div class="form-group">
+        <label for="paymentDate">Payment Date</label>
+        <input type="date" id="paymentDate" name="paymentDate" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="paymentMode">Payment Mode Type</label>
+        <select id="paymentMode" name="paymentMode" class="form-control">
+          <option value="">Select Payment Mode</option>
+          <option value="Cash">Cash</option>
+          <option value="Stripe">Stripe</option>
+          <option value="Paypal">Paypal</option>
+        </select>
+      </div>
+
+      <!-- Champ Note -->
+      <div class="form-group">
+        <label for="note">Note</label>
+        <textarea id="note" name="note" class="form-control" rows="3" placeholder="Please enter your Note"></textarea>
+      </div>
+      <!-- Boutons Create et Cancel -->
+      <div class="form-group text-right">
+        <button type="submit" class="btn btn-primary mr-2">Create</button>
+        <button type="button" class="btn btn-secondary">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Ajout de Bootstrap JS (optionnel) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

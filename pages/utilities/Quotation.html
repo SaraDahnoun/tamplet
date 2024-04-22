@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quotation</title>
+  <!-- Ajout de Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Quotation
+    </h1>
+    <form action="/create-invoice" method="post">
+      <div class="form-group">
+        <label for="invoice-number">Invoice Number:</label>
+        <input type="text" name="invoice-number" id="invoice-number" class="form-control" placeholder="Enter Invoice Number">
+      </div>
+      <div class="form-group">
+        <label for="customer">Customer:</label>
+        <select name="customer" id="customer" class="form-control">
+          <option value="">Select Customer...</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="sales-date"> 
+            <label for="sales-date">Quotation Date:</label>
+        <input type="date" name="sales-date" id="sales-date" class="form-control" value="2024-04-18">
+      </div>
+      <div class="form-group">
+        <label for="product">Product:</label>
+        <input type="text" name="product" id="product" class="form-control" placeholder="Search Product Name / Item Code / Scan bar code">
+      </div>
+      <button type="submit" class="btn btn-primary">Save & Continue</button>
+    </form>
+  </div>
+  
+  <!-- Ajout de Bootstrap JS (optionnel) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

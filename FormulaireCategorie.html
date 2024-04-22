@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Category</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .button-container {
+            text-align: right;
+            margin-top: 20px;
+        }
+        select {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="add-new-category">
+            <h2>Add New Category</h2>
+            <form>
+                <div class="form-group">
+                    <label for="parent-category">Parent Category</label>
+                    <select id="parent-category" name="parent-category" class="form-control">
+                        <option value="">Select Category...</option>
+                        <option value="electronics">Electronics</option>
+                        <optgroup label="Electronics">
+                            <option value="audio">Audio</option>
+                            <optgroup label="Audio">
+                                <option value="headphones">Headphones</option>
+                                <option value="soundbars">Soundbars</option>
+                            </optgroup>
+                            <option value="mobiles">Mobiles</option>
+                            <option value="televisions">Televisions</option>
+                            <option value="computers">Computers</option>
+                            <optgroup label="Computers">
+                                <option value="laptops">Laptops</option>
+                                <option value="desktops">Desktops</option>
+                            </optgroup>
+                            <option value="computer-peripherals">Computer Peripherals</option>
+                            <optgroup label="Computer Peripherals">
+                                <option value="monitors">Monitors</option>
+                                <option value="printers">Printers</option>
+                            </optgroup>
+                        </optgroup>
+                        <option value="fashion">Fashion</option>
+                        <option value="grocery">Grocery</option>
+                        <option value="home-and-furniture">Home & Furniture</option>
+                        <option value="baby-and-kids">Baby & Kids</option>
+                        <option value="main-category1">Main Category1</option>
+                        <optgroup label="Main Category1">
+                            <option value="category1">Category 1</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="category-details">
+                    <div class="form-group">
+                        <label for="category-name">Name</label>
+                        <input type="text" id="category-name" name="category-name" class="form-control" placeholder="Please enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="category-slug">Slug</label>
+                        <input type="text" id="category-slug" name="category-slug" class="form-control" placeholder="Please enter your Slug">
+                    </div>
+                    <div class="form-group">
+                        <label for="category-logo">Category Logo</label>
+                        <input type="file" id="category-logo" name="category-logo" class="form-control-file">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="button-container">
+            <button type="submit" class="btn btn-primary">Create</button>
+            <button type="button" class="btn btn-secondary">Cancel</button>
+        </div>
+    </div>
+    <!-- Ajout du JavaScript Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

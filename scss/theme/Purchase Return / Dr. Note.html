@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase Return / Dr. Note</title>
+  <!-- Ajout de Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">Purchase Return / Dr. Note</h1>
+    <form action="#">
+      <!-- Champ Invoice Number -->
+      <div class="form-group row">
+        <label for="invoiceNumber" class="col-sm-2 col-form-label">Invoice Number</label>
+        <div class="col-sm-10">
+          <input type="text" id="invoiceNumber" name="invoiceNumber" class="form-control" placeholder="Please enter your invoice number">
+        </div>
+      </div>
+
+      <!-- Champ Customer -->
+      <div class="form-group row">
+        <label for="Supplier" class="col-sm-2 col-form-label">Supplierr</label>
+        <div class="col-sm-10">
+          <select id="Supplier" name="customer" class="form-control">
+            <option value="">Select Supplier</option>
+            <!-- Ajoutez ici les options de sélection du client -->
+          </select>
+        </div>
+      </div>
+
+      <!-- Champ Date de Vente -->
+      <div class="form-group row">
+        <label for="purchaseDate" class="col-sm-2 col-form-label">Purchase Date</label>
+        <div class="col-sm-10">
+          <div class="input-group">
+            <input type="date" id="purchase Date" name="purchase Date" class="form-control">
+            <input type="time" id="purchase Date" name="purchase Date" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="product" class="col-sm-2 col-form-label">Product</label>
+        <div class="col-sm-10">
+          <input type="text" id="product" name="product" class="form-control" placeholder="Search Product Name/ Item Code / Scan Bar Code">
+        </div>
+      </div>
+
+    
+      </div>
+    </form>
+  </div>
+
+  <!-- Ajout de Bootstrap JS (optionnel) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

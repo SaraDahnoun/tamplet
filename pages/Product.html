@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add a New Product</title>
+  <!-- Ajout de Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Add a New Product</h1>
+    <form action="#">
+      <div class="mb-3">
+        <label for="productType" class="form-label">Product Type</label>
+        <select id="productType" name="productType" class="form-select">
+          <option value="single">Single Product</option>
+          <option value="variation">Product with Variations</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="image" class="form-label">Image</label>
+        <input type="file" id="image" name="image" class="form-control">
+      </div>
+
+      <!-- Autres champs du formulaire ici -->
+
+      <!-- Ligne noire pour séparer -->
+      <hr class="my-4 border-dark">
+
+      <!-- Section Price & Tax -->
+      <h2>Price & Tax</h2>
+      <div class="mb-3">
+        <label for="tax" class="form-label">Tax</label>
+        <input type="text" id="tax" name="tax" placeholder="Enter the tax" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="openingStock" class="form-label">Opening Stock</label>
+        <input type="text" id="openingStock" name="openingStock" placeholder="Enter the opening stock" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="openingStockDate" class="form-label">Opening Stock Date</label>
+        <input type="date" id="openingStockDate" name="openingStockDate" class="form-control">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Add Product</button>
+    </form>
+  </div>
+
+  <!-- Ajout de Bootstrap JS (optionnel) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

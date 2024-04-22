@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajouter un nouvel ajustement</title>
+  <!-- Ajout de Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Ajout des icônes Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">Ajouter un nouvel ajustement</h1>
+
+    <form action="#">
+      <!-- Champ Produit -->
+      <div class="form-group">
+        <label for="productSearch">Produit</label>
+        <div class="input-group">
+          <input type="text" class="form-control" id="productSearch" name="productSearch" placeholder="Rechercher le nom/code article/scanner le code-barres">
+          <div class="input-group-append">
+            <button type="button" class="btn btn-primary" id="searchProduct">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Current Stock et Quantity dans la même ligne -->
+      <div class="form-group">
+        <label for="currentStock" class="mr-3">Stock actuel</label>
+        <input type="number" class="form-control mr-3" id="currentStock" name="currentStock" placeholder="0" disabled>
+        <label for="quantity">Quantité</label>
+        <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Entrez la quantité">
+      </div>
+
+      <!-- Type d'ajustement -->
+      <div class="form-group">
+        <label for="adjustmentType">Type d'ajustement</label>
+        <select class="form-control" id="adjustmentType" name="adjustmentType">
+          <option value="add">Ajouter</option>
+          <option value="subtract">Supprimer</option>
+        </select>
+      </div>
+
+      <!-- Notes -->
+      <div class="form-group">
+        <label for="notes">Notes</label>
+        <textarea class="form-control" id="notes" name="notes" rows="3" placeholder="Entrez les notes"></textarea>
+      </div>
+
+      <!-- Boutons -->
+      <div class="form-group d-flex justify-content-end">
+        <button type="button" class="btn btn-secondary mr-2">Annuler</button>
+        <button type="submit" class="btn btn-primary">Créer</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Ajout de Bootstrap JS (optionnel) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
