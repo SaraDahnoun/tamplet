@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Achat</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Ajout de styles pour le cadre */
+        .container {
+            margin-top: 50px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Purchase</h2>
+        <form>
+            <div class="form-group">
+                <label for="purchase_date">Purchase Date:</label>
+                <input type="date" class="form-control" id="purchase_date" name="purchase_date">
+            </div>
+            <div class="form-group">
+                <label for="purchase_nbr">Purchase Number:</label>
+                <input type="text" class="form-control" id="purchase_nbr" name="purchase_nbr">
+            </div>
+            <div class="form-group">
+                <label for="purchase_status">Purchase Status:</label>
+                <select class="form-control" id="purchase_status" name="purchase_status">
+                    <option value="pending">En attente</option>
+                    <option value="completed">Complété</option>
+                    <option value="cancelled">Annulé</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="purchase_type">Purchase Type:</label>
+                <input type="text" class="form-control" id="purchase_type" name="purchase_type">
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
